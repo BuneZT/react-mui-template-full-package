@@ -1,7 +1,6 @@
 {
-  "name": "spedox",
-  "version": "0.0.1",
-  "private": true,
+  "name": "react-mui-template-full-package",
+  "version": "0.1.0",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",

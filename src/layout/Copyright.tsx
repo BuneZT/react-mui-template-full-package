@@ -6,8 +6,8 @@ export default function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://gdansk.pja.edu.pl/pl/">
-        PJATK
+      <Link color="inherit" href="#">
+        Your website
       </Link>{" "}
       {new Date().getFullYear()}.
     </Typography>

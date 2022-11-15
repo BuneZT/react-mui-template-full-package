@@ -3,7 +3,7 @@ import User from "../interfaces/User";
 
 const userAPI = {
   fetchOne(id: number) {
-    // TODO: Zmienić na adres z envów przy robieniu autoryzacji
+    // TODO: url from env
     return axios.get<User>(`url${id}`);
   },
 };

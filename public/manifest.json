@@ -1,6 +1,6 @@
 {
-  "short_name": "Spedox",
-  "name": "Spedox",
+  "short_name": "mui-template",
+  "name": "react-mui-template-full-package",
   "icons": [
     {
       "src": "favicon.ico",
