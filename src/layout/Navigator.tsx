@@ -37,7 +37,8 @@ export default function Navigator(props: DrawerProps) {
         <ListItem
           sx={{ ...item, ...itemCategory, fontSize: 22, color: "#fff" }}
         >
-          Spedox
+
+          React MUI template
         </ListItem>
         <ListItem
           {...{
@@ -55,7 +56,7 @@ export default function Navigator(props: DrawerProps) {
           <ListItemIcon>
             <HomeIcon />
           </ListItemIcon>
-          <ListItemText>Strona główna</ListItemText>
+          <ListItemText>Home</ListItemText>
         </ListItem>
         {navItems.map(({ name, children }) => (
           <Box key={name} sx={{ bgcolor: "#101F33" }}>
