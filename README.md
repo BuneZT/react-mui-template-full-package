@@ -4,7 +4,7 @@ React MUI "full package" template. Template with everything you need to start a 
 
 ## Features
 - MUI
-- Typescript
+- TypeScript
 - Redux (Async Thunk integration)
 - Routing
 - JEST
