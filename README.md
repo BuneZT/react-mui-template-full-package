@@ -11,6 +11,11 @@ React MUI "full package" template. Template with everything you need to start a 
 - Dashboard (based on [paperbase](https://github.com/mui/material-ui/tree/master/docs/src/pages/premium-themes/paperbase))
 - Login/Register forms
 
+## Screenshots
+![scrren_1](./screenshots/1.png)
+
+![scrren_2](./screenshots/2.png)
+
 
 ## Available Scripts
 
