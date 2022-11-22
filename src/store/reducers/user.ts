@@ -1,8 +1,8 @@
-import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import User from "../../interfaces/User";
 import userAPI from "../../api/userAPI";
 import StoreDefaultState from "../../interfaces/StoreDefaultState";
-import { defaultInitialState } from "../../utils/storeUtils";
+import { defaultInitialState, storeAddFetch } from "../../utils/storeUtils";
 
 interface UserState extends StoreDefaultState {
   user?: User;
@@ -21,20 +21,7 @@ const user = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchUser.pending, (state) => {
-      state.loading = true;
-    });
-    builder.addCase(
-      fetchUser.fulfilled,
-      (state, action: PayloadAction<User>) => {
-        state.loading = false;
-        state.user = action.payload;
-      }
-    );
-    builder.addCase(fetchUser.rejected, (state) => {
-      state.loading = false;
-      state.error = true;
-    });
+    storeAddFetch(builder, fetchUser, "user");
   },
 });
 
